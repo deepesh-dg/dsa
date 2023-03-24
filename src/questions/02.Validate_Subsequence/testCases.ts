@@ -14,6 +14,13 @@ export const testCases: TestCases = [
         },
         outputs: true,
     },
+    {
+        inputs: {
+            array: [5, 1, 22, 25, 6, -1, 8, 10],
+            sequence: [1, 6, 22, -1, 10],
+        },
+        outputs: false,
+    },
 ];
 
 export const checkTestCases = (solution: (array: number[], sequence: number[]) => boolean): (() => void) => {
