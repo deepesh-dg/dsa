@@ -12,9 +12,6 @@ function isValidSubsequence(array: number[], sequence: number[]) {
     return true;
 }
 
-const array = [5, 1, 22, 25, 6, -1, 8, 10],
-    sequence = [1, 6, -1, 10];
-
-console.log(isValidSubsequence(array, sequence));
+export default isValidSubsequence;
 
 // This solution fails in the case of duplicate elements in array
