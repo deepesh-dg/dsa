@@ -1,12 +1,4 @@
-export type TestCases = {
-    inputs: {
-        array: number[];
-        targetSum: number;
-    };
-    outputs: number[];
-}[];
-
-export const testCases: TestCases = [
+export const testCases = [
     {
         inputs: {
             array: [5, 1, 22, 25, 6, -1, 8, 10],
@@ -16,7 +8,7 @@ export const testCases: TestCases = [
     },
 ];
 
-export const checkTestCases = (solution: (array: number[], targetSum: number) => number[]): (() => void) => {
+export const checkTestCases = (solution) => {
     return () => {
         testCases.forEach((testCase) => {
             expect(solution(testCase.inputs.array, testCase.inputs.targetSum)).toStrictEqual([...testCase.outputs]);

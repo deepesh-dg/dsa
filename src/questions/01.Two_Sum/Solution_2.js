@@ -1,4 +1,4 @@
-function twoNumberSum(array: number[], targetSum: number) {
+function twoNumberSum(array, targetSum) {
     const numbers = {};
 
     for (const num of array) {
