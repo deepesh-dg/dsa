@@ -1,5 +1,5 @@
-function isValidSubsequence(array: number[], sequence: number[]) {
-    const order: number[] = [];
+function isValidSubsequence(array, sequence) {
+    const order = [];
 
     for (let i = 0; i < sequence.length; i++) {
         const index = array.indexOf(sequence[i]);
