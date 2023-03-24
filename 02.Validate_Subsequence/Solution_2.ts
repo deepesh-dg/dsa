@@ -1,4 +1,4 @@
-function isValidSubsequence2(array: number[], sequence: number[]) {
+function isValidSubsequence(array: number[], sequence: number[]) {
     let arrInd: number = 0;
     let seqInd: number = 0;
 
@@ -12,3 +12,5 @@ function isValidSubsequence2(array: number[], sequence: number[]) {
 
     return false;
 }
+
+export default isValidSubsequence;

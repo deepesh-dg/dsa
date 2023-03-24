@@ -10,3 +10,5 @@ function twoNumberSum(array: number[], targetSum: number) {
 
     return [];
 }
+
+export default twoNumberSum;
