@@ -1,5 +1,5 @@
 # DSA Questions
 
-## From Begineer to Advanced
+## From Beginner to Advanced
 
 ### With Test Cases
