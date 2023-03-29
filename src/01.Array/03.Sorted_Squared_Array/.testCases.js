@@ -9,7 +9,7 @@ export const testCases = [
         inputs: {
             array: [-1],
         },
-        outputs: [-1],
+        outputs: [1],
     },
     {
         inputs: {
@@ -19,9 +19,9 @@ export const testCases = [
     },
     {
         inputs: {
-            array: [0],
+            array: [],
         },
-        outputs: [0],
+        outputs: [],
     },
     {
         inputs: {
@@ -39,7 +39,7 @@ export const testCases = [
         inputs: {
             array: [-1, 0, 5, 11],
         },
-        outputs: [1, 0, 25, 121],
+        outputs: [0, 1, 25, 121],
     },
     {
         inputs: {
