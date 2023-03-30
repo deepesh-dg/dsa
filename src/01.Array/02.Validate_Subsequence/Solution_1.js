@@ -1,17 +1,11 @@
 function isValidSubsequence(array, sequence) {
-    const order = [];
+    let j = 0;
 
-    for (let i = 0; i < sequence.length; i++) {
-        const index = array.indexOf(sequence[i]);
-
-        if (index === -1 || order[order.length - 1] >= index) return false;
-
-        order.push(index);
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] === sequence[j]) j++;
     }
 
-    return true;
+    return j === sequence.length;
 }
 
 export default isValidSubsequence;
-
-// This solution fails in the case of duplicate elements in array
